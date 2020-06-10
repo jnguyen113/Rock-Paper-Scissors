@@ -1,0 +1,29 @@
+#title {
+    text-align: center;
+    
+}
+#title .name{
+    color: blue;
+}
+
+body{
+    text-align: center;
+    justify-content: center;
+}
+
+.rock{
+   background: grey;
+   color: white;
+}
+.paper{
+    background: white;
+    color: black;
+}
+.scissors{
+    background: green;
+    color: white;
+}
+.instructions{
+    color: red;
+    font-weight: bold;
+}
