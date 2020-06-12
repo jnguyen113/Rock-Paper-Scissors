@@ -7,57 +7,30 @@
 </head>
 <div id="title">
     <h1 class="name">Rock Paper Scissors</h1>
+    <p class="des">Welcome to Rock, Paper Scissors, first to 3 points wins!</p>
+    <p class="winnerDesc">WHO WON?</p>
+</div>
+<div id="scoreboard">
+    <div class ="player-score">
+        <p class ="playerScore">Player Score: </p>
+        <p id="user-score">0</p>
+    </div>
+    <div class = "computer-score">
+        <p class ="compScore">Computer Score: </p>
+        <p id="comp-score">0</p>
+    </div>
 </div>
 
-<div id="buttons">
+<div id="images">
     <body>
-        <button class="rock"> Rock </button>
-        <button class="paper"> Paper </button>
-        <button class="scissors"> Scissors </button>
-        <p class = "button-explain">This is for decorations for now, follow the instructions below.</p>
-        <p class = "instructions">To Play, Right click, click "Inspect element", go to the console and type "playGame()</p>
-        <script>
-            //js goes here
-            function compTurn(){
-                const options = ["Rock", "Paper", "Scissors"];
-                const compPlay = Math.floor(Math.random()*3);
-                return options[compPlay];
-
-            }
-
-            function playGame(){
-                console.log("Welcome to Rock, Paper, Scissors");
-                console.log("You will be playing against a computer.");
-                console.log("Good Luck!");
-                let playerScore = 0;
-                let computerScore = 0;
-                while(playerScore < 3 || computerScore < 3){
-                    const userTurn = prompt("Rock, Paper, or Scissors?");
-                    const computerTurn = compTurn();
-                    if((userTurn === "Rock" && computerTurn === "Scissors") || (userTurn ==="Scissors" && computerTurn ==="Paper") ||(userTurn ==="Paper" && computerTurn ==="Rock")){
-                        console.log("You win with " + userTurn + " Computer chose " + computerTurn);
-                        playerScore++;
-                    } 
-
-                    if((userTurn === "Rock" && computerTurn === "Paper") || (userTurn ==="Scissors" && computerTurn ==="Rock") || (userTurn ==="Paper" && computerTurn ==="Scissor")){
-                        console.log("You lost with " + userTurn + " Computer chose " + computerTurn);
-                        computerScore++;
-                    }
-                    if((userTurn === "Rock" && computerTurn === "Rock") || (userTurn ==="Scissors" && computerTurn ==="Scissors") || (userTurn ==="Paper" && computerTurn ==="Paper")){
-                        console.log("Tie with " + computerTurn)
-                    }      
-                }
-                if(playerScore >= 3){
-                    alert("You Win!");
-                }else{
-                    alert("Computer Won");
-                }
-
-            }
+        <input type ="image" class="rock" alt="rock"src=https://lh3.googleusercontent.com/proxy/0YVqjGV93vnWgLda7m4s0bGlt17eTa1p_bRuK49iGaE0iHxNUBwqW_dFOIR-1NHLKJV4pQUdtnSZrf7oM637dtld-XpwiAwrqi9c>
+        <input type ="image" class="paper" alt="paper"src=https://webstockreview.net/images/paper-clipart-transparent-background.png>
+        <input type ="image" class="scissors" alt="scissors"src=https://webstockreview.net/images/clipart-scissors-transparent-background-3.png>
 
 
-        </script>
+        <p class = "instructions">If you want to play antoher way, right click on the page, click "Inspect element", go to the console and type "playGame()"</p>
+        
     </body>
 </div>
-
+<script src="main.js"></script>
 </html>

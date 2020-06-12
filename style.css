@@ -1,29 +1,51 @@
 #title {
     text-align: center;
-    
 }
 #title .name{
     color: blue;
+    font-size: 80px;
 }
+#title .des{
+    color: lightcoral;
+    font-size: 40px;
+}
+#scoreboard{
+    text-align: center;
+}
+#scoreboard p{
+    font-size: 25px;
+}
+#scoreboard .player-score{
+    float: left;
+    border: 10px solid white;
+}
+#scoreboard .computer-score{
+    float: right;
+    border: 10px solid white;
+
+}
+
 
 body{
     text-align: center;
     justify-content: center;
+    background-color: lightseagreen;
 }
 
-.rock{
-   background: grey;
-   color: white;
+#buttons .rock{
+    height: 10px;
+    width: 5px;
 }
-.paper{
-    background: white;
-    color: black;
+
+input{
+    height: 300px;
+    width: 300px;
 }
-.scissors{
-    background: green;
-    color: white;
+input:hover {
+    background-color: lightskyblue;
 }
+
 .instructions{
-    color: red;
+    color:white;
     font-weight: bold;
 }
