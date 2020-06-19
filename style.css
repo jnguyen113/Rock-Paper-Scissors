@@ -42,7 +42,8 @@ input{
     width: 300px;
 }
 input:hover {
-    background-color: lightskyblue;
+    transform: scale(1.1);
+    
 }
 
 .instructions{
